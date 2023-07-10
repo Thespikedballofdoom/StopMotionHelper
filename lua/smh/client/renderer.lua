@@ -26,7 +26,7 @@ local function RenderTick()
         command = "screenshot"
     end
 
-    RunConsoleCommand(command)
+    RunConsoleCommand(command, "SMH")
 
     if newPos >= SMH.State.PlaybackLength then
         MGR.Stop()
