@@ -20,7 +20,7 @@ function PANEL:Init()
     self.ScrollButtonRight.Paint = function(self, w, h) derma.SkinHook("Paint", "ButtonRight", self, w, h) end
     self.ScrollButtonRight.DoClick = function() self:SetScrollOffset(self.ScrollOffset + 1) end
 
-    self.Zoom = 100
+    self.Zoom = 400
     self.TotalFrames = 100
     self.ScrollOffset = 0
     self.FrameArea = {0, 1}
