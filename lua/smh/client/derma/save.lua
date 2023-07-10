@@ -11,10 +11,10 @@ function PANEL:Init()
     self:SetDeleteOnClose(false)
     self:SetSizable(true)
 
-    self:SetSize(250, 250)
+    self:SetSize(500, 1000)
     self:SetMinWidth(250)
     self:SetMinHeight(250)
-    self:SetPos(ScrW() / 2 - self:GetWide() / 2, ScrH() / 2 - self:GetTall() / 2)
+    self:SetPos(ScrW() - self:GetWide(), 0)
 
     self.FileName = vgui.Create("DTextEntry", self)
     self.FileName.Label = vgui.Create("DLabel", self)
