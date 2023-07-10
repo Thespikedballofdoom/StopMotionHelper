@@ -3,4 +3,28 @@ Stop Motion Helper
 Stop Motion Helper is a tool for Garry's Mod designed to make stop motion animation easier and more manageable.
 It can also be used for recorded animation, but it is mainly designed around stop motion.
 
-If you have any bug fixes or improvements you have made, feel free to make a pull request. However, before you do, please make sure your code works, is clean and clear (identation, variable names that are understandable, and comments for not-so-understandable parts) and uses reactive paradigm like the rest of the addon.
+This repo is just for my small mods for it which are listed below.
+
+
+lua\smh\client\state.lua
+
+    SMH.State = {
+      PlaybackRate = 60,
+      PlaybackLength = 700,
+  }
+
+
+lua\smh\client\derma\save.lua
+lua\smh\client\derma\load.lua
+
+    self:SetSize(500, 1000)
+    self:SetPos(ScrW() - self:GetWide(), ScrH() - self:GetTall())
+	
+
+lua\smh\client\derma\frame_panel.lua
+
+    self.Zoom = 400
+
+lua\smh\client\renderer.lua
+
+    RunConsoleCommand(command, "SMH")
