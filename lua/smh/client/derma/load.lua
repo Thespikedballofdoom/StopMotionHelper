@@ -9,7 +9,7 @@ function PANEL:Init()
     self:SetSize(500, 1000)
     self:SetMinWidth(250)
     self:SetMinHeight(250)
-    self:SetPos(ScrW() - self:GetWide(), 0)
+    self:SetPos(ScrW() - self:GetWide() + 5, 0)
 
     self.PathLabel = vgui.Create("DLabel", self)
     self.PathLabel:SetMouseInputEnabled(true)
